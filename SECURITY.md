@@ -7,3 +7,5 @@
 目前未建立专用私密漏洞收件渠道。若发现会泄漏凭据的问题，请勿公开细节、可利用载荷或秘密；先以不含细节的 issue 请求私密联系渠道。维护者确认渠道后再披露。
 
 This is an unfinished local desktop application. Review source and dependencies before running it with access to a real Codex account. Public issues are not a safe place for secrets.
+
+任务聊天仅响应用户发送操作，先核对固定聊天 ID 和本机记录，再写入 Codex 原生发送队列，由桌面客户端接手处理。排队回执不代表已经执行；超时待核对时不自动重发。该功能会让正常 Codex 任务处理用户输入，不是纯只读监控。聊天窗口只加载自己的本地页面资源，报告中的原始 HTML 不执行。详见 [任务聊天说明](docs/TASK_CHAT.md)。

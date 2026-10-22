@@ -1122,6 +1122,26 @@
       "en": "Reset news",
       "ja": "リセット情報",
       "ko": "초기화 소식"
+    },
+    "展开": {
+      "en": "Expand",
+      "ja": "拡大",
+      "ko": "펼치기"
+    },
+    "展开任务对话": {
+      "en": "Open task conversation",
+      "ja": "タスクの会話を開く",
+      "ko": "작업 대화 열기"
+    },
+    "打开未完成，请重试": {
+      "en": "Could not open. Try again.",
+      "ja": "開けませんでした。再試行してください。",
+      "ko": "열지 못했습니다. 다시 시도해 주세요."
+    },
+    "关闭这条通知": {
+      "en": "Dismiss this notification",
+      "ja": "この通知を閉じる",
+      "ko": "이 알림 닫기"
     }
   },
   "patterns": [

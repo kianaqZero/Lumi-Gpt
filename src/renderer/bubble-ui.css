@@ -51,4 +51,12 @@
 #bk-token-tooltip{position:fixed;z-index:30;box-sizing:border-box;max-width:250px;padding:9px 12px;border:1px solid #baa3cf;border-radius:11px;background:#fcf8ff;color:#3b284c;box-shadow:0 4px 18px #20112930;font:12px/1.6 "Microsoft YaHei UI",sans-serif;white-space:pre-wrap;pointer-events:none;user-select:none}
 #bk-token-tooltip[hidden]{display:none}
 
-.lumi-language-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;color:#49325d;font-size:12px}.lumi-language-row select{min-width:140px;max-width:190px;padding:7px 10px;border:1px solid #c8b3d9;border-radius:10px;background:#fff;color:#382348}html:lang(en) #lumi-bubble,html:lang(ja) #lumi-bubble,html:lang(ko) #lumi-bubble{font-size:12px}#lumi-bubble .bk-tabs button{white-space:nowrap}#lumi-bubble footer{gap:5px;flex-wrap:wrap}
+.lumi-language-row{display:grid;gap:8px;margin-top:12px;color:#49325d;font-size:12px}.lumi-language-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}#control-body .lumi-language-options button{min-width:0;padding:8px 2px;border:1px solid #c8b3d9;border-radius:10px;background:#fff;color:#382348;font-size:11px;white-space:nowrap;cursor:pointer}#control-body .lumi-language-options button[aria-pressed=true]{background:#e8dcf4;border-color:#9271ac;color:#382348;font-weight:700}#control-body .lumi-language-options button:focus-visible{outline:2px solid #8861a3;outline-offset:2px}#control-body .lumi-language-options button:disabled{cursor:wait;opacity:.65}#lumi-language-feedback{font-size:11px;line-height:1.5;color:#89344a}html:lang(en) #lumi-bubble,html:lang(ja) #lumi-bubble,html:lang(ko) #lumi-bubble{font-size:12px}#lumi-bubble .bk-tabs button{white-space:nowrap}#lumi-bubble footer{gap:5px;flex-wrap:wrap}
+
+#bk-task-list .bk-task-expand{padding:3px 7px;font-size:10px;min-width:36px;border:1px solid #c6b3d7;border-radius:8px;background:#f8f2ff;color:#503569;white-space:nowrap}#bk-task-list .bk-task-expand:disabled{opacity:.5;cursor:default}
+
+#bk-notices .bk-notice{display:flex;align-items:flex-start;gap:5px;padding:5px 5px 5px 10px;cursor:default}
+#bk-notices .bk-notice-open{flex:1;min-width:0;margin:0;padding:5px 0;border:0;background:transparent;color:inherit;text-align:left;font:inherit;line-height:1.5;overflow-wrap:anywhere;cursor:pointer}
+#bk-notices .bk-notice-close{flex:0 0 24px;width:24px;min-width:24px;height:24px;padding:0;margin:1px 0 0;border:0;border-radius:8px;background:transparent;color:#69527e;font-size:18px;line-height:24px;cursor:pointer}
+#bk-notices .bk-notice-close:hover{background:#d9cae8;color:#3f2655}
+#bk-notices .bk-notice button:focus-visible{outline:2px solid #8764a3;outline-offset:1px}

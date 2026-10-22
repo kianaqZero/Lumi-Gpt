@@ -1,4 +1,4 @@
-const {app, BrowserWindow, ipcMain, protocol, session, screen, Tray, Menu, nativeImage, powerMonitor} = require('electron');
+const {app, BrowserWindow, ipcMain, protocol, session, screen, Tray, Menu, nativeImage, powerMonitor, shell} = require('electron');
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
@@ -62,6 +62,7 @@ function applyWindowPresentation(){
  if(!win||win.isDestroyed())return;
  const suspended=Boolean(ui.fullscreen_suspended||ui.tray_minimized),topmost=ui.topmost&&!suspended;
  if(lastPresentationSuspended!==suspended){
+  incident('presentation_change',JSON.stringify({suspended,tray_minimized:Boolean(ui.tray_minimized),fullscreen_suspended:Boolean(ui.fullscreen_suspended),desired_topmost:Boolean(ui.topmost)}));
   const resumed=lastPresentationSuspended===true&&!suspended;if(suspended&&bridgeReloading){clearTimeout(startupDeadline);startupDeadline=null;}
   if(resumed&&bridgeReloading){if(modelFailure)setImmediate(()=>{interfaceReloading=false;reloadInterface();});else armLoadDeadline('Model switch timed out after resume');}
   // Restore normal Chromium throttling while the whole pet is hidden. The
@@ -70,14 +71,14 @@ function applyWindowPresentation(){
   lastPresentationSuspended=suspended;
   taskObserver?.worker.postMessage({lowPower:suspended});
  }
- if(appliedTopmost!==topmost){win.setAlwaysOnTop(topmost);appliedTopmost=topmost;}
+ const actualTopmost=win.isAlwaysOnTop();if(appliedTopmost!==topmost||actualTopmost!==Boolean(topmost)){if(appliedTopmost===topmost)incident('topmost_drift',JSON.stringify({expected:Boolean(topmost),actual:actualTopmost}));win.setAlwaysOnTop(topmost);appliedTopmost=topmost;}
  if(suspended){endDrag();if(win.isVisible())win.hide();}
  else if(!startupDeadline&&!win.isVisible())win.showInactive();
  // Only an explicit tray restore may re-raise a visible but obscured window.
  // Ordinary polling must never keep pushing the pet above a fullscreen app.
  const restoreEpoch=Number(ui.restore_epoch)||0;
  if(restoreEpoch!==lastAppliedRestoreEpoch){
-  lastAppliedRestoreEpoch=restoreEpoch;
+  lastAppliedRestoreEpoch=restoreEpoch;incident('explicit_restore',JSON.stringify({epoch:restoreEpoch,suspended,native_visible:win.isVisible(),native_topmost:win.isAlwaysOnTop()}));
   if(restoreEpoch>0&&!suspended&&!startupDeadline){win.setAlwaysOnTop(Boolean(topmost));win.showInactive();win.moveTop();}
  }
 }
@@ -244,7 +245,10 @@ app.whenReady().then(async()=>{
   // A hidden Chromium input child routes mouse activation to this top window.
   // Preserve its native down without allowing the pet to take foreground focus.
   if(process.platform==='win32'){passiveInput=require('./passive-input.cjs').install(win);inputVisibility=require('./native-input-visibility.cjs').create(win);}
-  win.on('show',()=>{appliedTopmost=null;applyWindowPresentation();inputVisibility?.maintain(true,true);setTimeout(()=>{if(!shuttingDown)inputVisibility?.maintain(!ui.fullscreen_suspended&&!ui.tray_minimized,true);},100).unref();});
+  win.on('hide',()=>incident('window_hidden',JSON.stringify({tray_minimized:Boolean(ui.tray_minimized),fullscreen_suspended:Boolean(ui.fullscreen_suspended)})));
+  win.on('minimize',()=>incident('window_minimized','native_minimize'));
+  win.on('restore',()=>incident('window_restored','native_restore'));
+  win.on('show',()=>{incident('window_shown','native_show');appliedTopmost=null;applyWindowPresentation();inputVisibility?.maintain(true,true);setTimeout(()=>{if(!shuttingDown)inputVisibility?.maintain(!ui.fullscreen_suspended&&!ui.tray_minimized,true);},100).unref();});
   win.on('close',()=>{inputVisibility?.dispose();passiveInput?.dispose();});
   if(testMode)win.webContents.setFrameRate(60);
   const workArea=screen.getPrimaryDisplay().workArea;
@@ -305,6 +309,8 @@ app.whenReady().then(async()=>{
   ipcMain.on('host:input-hold',(event,held)=>{if(!trusted(event)||typeof held!=='boolean')return;inputHeldUntil=held?Date.now()+5000:0;inputEvent('input_hold',{held});if(!held){const next=Boolean(ui.fullscreen_suspended)||!nativeRegionActive;if(ignoreMouse!==next){ignoreMouse=next;win.setIgnoreMouseEvents(next,{forward:true});inputEvent('mouse_passthrough',{ignored:next});}}});
   ipcMain.on('host:hit-region',(event,active)=>{if(!trusted(event))return;if(typeof active!=='boolean')return;nativeRegionActive=active;lastHitUtc=new Date().toISOString();const next=Boolean(ui.fullscreen_suspended)||(inputHeldUntil<=Date.now()&&!active);if(ignoreMouse!==next){ignoreMouse=next;win.setIgnoreMouseEvents(next,{forward:true});inputEvent('mouse_passthrough',{ignored:next});}});
   if(!process.argv.includes('--bridge-test')||process.argv.includes('--real-task-test')){try{startTaskObserver();}catch{publishTask({status:'unknown',progress:'Codex状态接入暂不可用',scope_verified:false});}}
+  const taskChatWindows=require('./task-chat-window.cjs').createManager({BrowserWindow,ipcMain,shell,app,screen,base:__dirname,getTasks:()=>taskPresentation?.tasks||[],locale:()=>language.read()});
+  ipcMain.handle('task-chat:open',(event,id)=>{if(!trusted(event))throw Error('UNTRUSTED_PET_FRAME');return taskChatWindows.open(id);});
   ipcMain.handle('host:config',event=>{if(!trusted(event))return;return {sampleOnly:false,modelUrl:'pet://model/'+encodeURIComponent(path.basename(modelFile)),modelSummary:contract.summary,bridgePresentation:bridge.state,taskPresentation,selectedForm,forms:registry.forms.map(({id,appearance,state,label,motion_support,core_verified})=>({id,appearance,state,label,motion_support,core_verified})),controls:{...ui},bubbleSettings:readBubbleSettings(),language:language.read(),languageCatalog:language.catalog};});
   ipcMain.handle('language:set',(event,locale)=>{if(!trusted(event))return;const result=language.save(locale);bridge.command('language',{value:result});updateTrayLanguage();return result;});
   ipcMain.handle('bubble:settings',(event,value)=>{if(!trusted(event))return;return saveBubbleSettings(value);});

@@ -11,6 +11,9 @@ jobs:
         with:
           node-version: '22'
       - run: node tests/site.test.cjs
+      - run: node tests/task-conversation.test.cjs
+      - run: node tests/task-rpc.test.cjs
+      - run: node tests/source.test.cjs
       - name: Parse PowerShell without executing application code
         shell: powershell
         run: |

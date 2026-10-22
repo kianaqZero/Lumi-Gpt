@@ -12,12 +12,18 @@ Lumi is an independent Windows desktop companion that brings local Codex task pr
 
 ## Features
 
-- Task notifications open the matching task; quota notifications open the matching account. Handled messages leave the conversation list.
+- Expand a task into a resizable conversation window. Read full reports, load earlier messages and send instructions to the same Codex conversation. Two-way sync was confirmed in the maintainer’s local setup.
+- Task/quota notifications open their matching destination, or can be dismissed directly with ×. Handled events remain dismissed across interface recovery.
+- Light/dark reading themes, 16/18/20 px text, report lists/tables/code, jump-to-latest and preserved drafts/reading position.
 - Per-turn token estimates use compact units such as `2.37M`; hover for the exact count. Availability depends on verified local task events.
 - Hourly/weekly quota, account management and reset-card details live alongside the pet. Account changes and card consumption require explicit confirmation.
 - Reset announcements separate community records, experimental 24/48-hour probabilities and actual local account readings. Data attribution: [Codex Reset](https://codex-reset.com/developers).
 - Live Chinese, English, Japanese and Korean UI switching, persisted locally. User/project/account text remains in its original language.
 - Chibi and full-body candidates, activity-driven states, tray controls and full-screen suspension/recovery. Artwork, motion and long-run stability remain under development.
+
+![R12 task conversation with synthetic messages](docs/images/task-chat-light.png)
+
+[Dark chat preview](docs/images/task-chat-dark.png) · [Task chat details](docs/TASK_CHAT.md) · [Changelog](CHANGELOG.md)
 
 ![Announcement UI with fixed-clock demonstration data](docs/images/announcement-en.png)
 
@@ -27,7 +33,7 @@ Read [setup and development](docs/SETUP.md). The repository includes application
 
 ## Development and privacy
 
-The R10 candidate builds on R9 repairs. Data validation and isolated native/renderer checks do not establish real account-switch, real credit-consumption or long-term reliability across Windows/GPU/Codex versions. See the [roadmap](docs/ROADMAP.md).
+The source preview now tracks R12, still in development. The maintainer confirmed R11.2 two-way chat sync and accepted the R12 appearance in their local setup. R12 passed 59 window/UI/apply-and-rollback scenario assertions; automated messaging checks used mock backends. This is not a cross-device or long-run reliability guarantee. Intermittent pet disappearance remains under investigation. Account switching, credit consumption and Codex upgrades need further validation. See the [roadmap](docs/ROADMAP.md).
 
 Local task data and credentials are not published in this repository. The public reset API receives no account credentials. Normal quota/account operations still contact their relevant services. Read [SECURITY](SECURITY.md) before sharing diagnostic material.
 

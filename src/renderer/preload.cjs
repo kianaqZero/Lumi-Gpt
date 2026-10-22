@@ -1,5 +1,6 @@
 const {contextBridge,ipcRenderer}=require('electron');
 contextBridge.exposeInMainWorld('petHost',{
+  openTask:threadId=>ipcRenderer.invoke('task-chat:open',threadId),
   setLanguage:locale=>ipcRenderer.invoke('language:set',locale),
   consumeResetCard:value=>ipcRenderer.invoke('cards:consume',value),
   modelError:message=>ipcRenderer.send('host:model-error',String(message)),
