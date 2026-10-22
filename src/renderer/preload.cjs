@@ -1,0 +1,28 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('petHost',{
+  setLanguage:locale=>ipcRenderer.invoke('language:set',locale),
+  consumeResetCard:value=>ipcRenderer.invoke('cards:consume',value),
+  modelError:message=>ipcRenderer.send('host:model-error',String(message)),
+  saveBubbleSettings:value=>ipcRenderer.invoke('bubble:settings',value),
+  selectQuota:key=>ipcRenderer.invoke('bubble:account',key),
+  onBubble:callback=>ipcRenderer.on('bubble:open',(_event,page)=>callback(page)),
+  hitRegion:active=>ipcRenderer.send('host:hit-region',Boolean(active)),
+  onCursor:callback=>ipcRenderer.on('host:cursor',(_event,value)=>{try{callback(value);}finally{ipcRenderer.send('host:cursor-ack',value.sequence);}}),
+  inputHold:value=>ipcRenderer.send('host:input-hold',Boolean(value)),
+  bridgeTap:()=>ipcRenderer.send('quota-bridge:tap'),
+  onTask:callback=>ipcRenderer.on('codex-task:state',(_event,value)=>callback(value)),
+  onBridge:callback=>ipcRenderer.on('quota-bridge:state',(_event,value)=>callback(value)),
+  openTiboSource: id=>ipcRenderer.invoke('quota-bridge:tibo-source',id),
+  selectAppearance:value=>ipcRenderer.invoke('quota-bridge:appearance',value),
+  onModel:callback=>ipcRenderer.on('host:model-load',()=>callback()),
+  config:()=>ipcRenderer.invoke('host:config'),
+  selectModel:id=>ipcRenderer.invoke('host:model',id),
+  control:command=>ipcRenderer.invoke('host:control',command),
+  primeDrag:point=>ipcRenderer.send('host:press',point),
+  startDrag:offset=>ipcRenderer.send('host:drag-start',offset),
+  endDrag:()=>ipcRenderer.send('host:drag-end'),
+  ready:()=>ipcRenderer.send('host:ready'),
+  error:message=>ipcRenderer.send('host:error',String(message)),
+  recording:bytes=>ipcRenderer.invoke('host:recording',bytes),
+  onControls:callback=>ipcRenderer.on('host:controls',(_event,value)=>callback(value))
+});

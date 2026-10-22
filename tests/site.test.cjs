@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('node:assert/strict'),site=require('../src/notice_monitor/tibo-site.cjs');
+const now=Date.parse('2026-10-22T08:00:00Z'),at=new Date(now).toISOString();
+const valid={updated_at:at,probabilities:{rounded_24h:20,rounded_48h:40},confidence:'low',official_signal:null,last_reset_at:null,latest_alert:null};
+const parsed=site.forecast(valid,now);assert.equal(parsed.p24,20);
+assert.throws(()=>site.forecast({...valid,probabilities:{rounded_24h:80,rounded_48h:30}},now));
+assert.throws(()=>site.forecast({...valid,updated_at:'2026-10-01T00:00:00Z'},now));
+const catalog=require('../src/i18n/catalog.json');
+for(const [key,translations]of Object.entries(catalog.entries))for(const locale of ['en','ja','ko'])assert.equal(typeof translations[locale],'string',key+':'+locale);
+console.log('PASS: forecast validation and complete four-language catalogue');

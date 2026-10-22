@@ -1,0 +1,24 @@
+:root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#293b3e;--controls-scale:1}
+.task-card .task-list button{display:block;flex-shrink:0;min-height:28px;line-height:20px;padding:4px 6px;border:1px solid #c5ddd5;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent;user-select:none}[hidden]{display:none!important}
+#control-dock{position:absolute;top:var(--controls-top,12px);left:var(--controls-center,50%);width:350px;padding:10px;background:#f4fcf8f2;border:1px solid #b8d6d0;border-radius:15px;box-shadow:0 3px 12px #163e3420;transform:translateX(-50%) scale(var(--controls-scale));transform-origin:top center;z-index:3}
+.dock-head{display:flex;align-items:center;gap:6px}.dock-head strong{flex:1;min-width:0;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dock-head button{flex-shrink:0}#quit{padding:5px 8px;min-width:26px}
+button{border:1px solid #b8d6d0;border-radius:8px;background:#f7fffb;color:#29534b;padding:6px 9px;min-width:30px;cursor:pointer;font:12px "Microsoft YaHei",sans-serif}button:hover{background:#d6f5e7}button:focus-visible,select:focus-visible{outline:2px solid #278d77;outline-offset:1px}
+#hint{margin:10px 0 8px;font-size:11px;color:#627979}nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:5px}nav button{min-width:0;padding:6px 0;font-size:11px}
+.forms{display:flex;gap:7px;margin-top:8px}.forms select{min-width:0;flex:1;border:1px solid #b8d6d0;border-radius:8px;padding:7px;background:#f7fffb;color:#29534b;font:12px "Microsoft YaHei",sans-serif}.forms select:last-child{flex:2}
+.forms button{min-width:0;flex:1;text-align:left;padding:7px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.forms #form-picker{flex:2}
+.choice-panel{position:absolute;z-index:5;left:10px;right:10px;top:45px;bottom:9px;padding:6px;background:#f4fcf8;border:1px solid #9ac9bd;border-radius:10px;display:flex;flex-direction:column;gap:4px;box-shadow:0 2px 8px #163e3420}
+.choice-head{display:flex;align-items:center;justify-content:space-between;font-size:11px;height:19px;flex-shrink:0}.choice-head button{min-width:22px;padding:0 5px;border:0;line-height:19px}
+.choice-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;flex:1;align-content:start;min-height:0}.choice-options button{padding:4px 6px;min-width:0;text-align:left;font-size:11px;line-height:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.choice-options button[aria-selected="true"]{background:#d6f5e7;border-color:#278d77;color:#185746}
+.choice-pages{display:flex;justify-content:center;align-items:center;gap:8px;font-size:10px;height:20px;flex-shrink:0}.choice-pages button{padding:0 7px;min-width:24px;height:20px}.choice-panel button:disabled{opacity:.4;cursor:default}
+footer{margin-top:9px;font-size:11px;text-align:center;color:#586b6c;line-height:1.4}
+.task-list{display:flex;flex-direction:column;gap:3px;max-height:100px;overflow-y:auto;margin-top:6px}.task-list button{padding:4px 6px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border:1px solid #c5ddd5}.task-list button[aria-pressed="true"]{background:#d6f5e7}.task-usage{margin-top:5px;color:#3b6e60;font-size:10px}
+canvas{display:block;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}
+.speech{position:relative;margin-top:8px;padding:8px 12px;background:#e7f8f0;border:1px solid #a6d8c6;border-radius:12px;color:#225e51;font-size:13px;line-height:1.5;overflow-wrap:anywhere;pointer-events:none}
+
+#control-dock.has-tibo-notice{background:#ecfff5;border-color:#67bea4;box-shadow:0 3px 14px #2a987330}#control-dock.has-tibo-notice #identity{color:#12684f}#control-dock.has-tibo-notice #tibo{background:#d6f5e7;border-color:#67bea4}
+
+.task-card{margin-top:7px;padding:7px 9px;background:#ecf8f4;border:1px solid #b8d6d0;border-radius:9px;font-size:11px;line-height:1.45;overflow:hidden}.task-head{display:flex;gap:6px;align-items:center}.task-label{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.task-card button{font-size:10px;line-height:14px;padding:0 5px;min-width:20px;border:0;background:transparent}.task-progress{margin-top:4px;max-height:32px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow-wrap:anywhere}.task-card[data-status="failed"]{background:#fff0ec;border-color:#e0aea1}.task-card[data-status="completed"]{background:#def7eb}.task-card[data-status="unavailable"],.task-card[data-status="unknown"]{background:#eff3f2;color:#617673}
+
+/* Keep WebGL drawing only the original character strip. UI has its own transparent area. */
+#pet{position:absolute;left:365px;top:0}

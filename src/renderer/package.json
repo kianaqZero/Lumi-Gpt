@@ -1,0 +1,10 @@
+{
+  "name": "lumi-desktop-pet-renderer",
+  "version": "0.3.0-dev",
+  "private": true,
+  "main": "main.cjs",
+  "description": "Windows desktop companion for local Codex task and quota status; work in progress.",
+  "dependencies": {
+    "koffi": "3.3.3"
+  }
+}

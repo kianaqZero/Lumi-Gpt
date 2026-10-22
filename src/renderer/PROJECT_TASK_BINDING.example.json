@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "thread_id": "00000000-0000-0000-0000-000000000000",
+  "title": "My project",
+  "project_root": "C:/Projects/my-project",
+  "sessions_root": "C:/Users/YOUR_NAME/.codex/sessions",
+  "rollout": "C:/Users/YOUR_NAME/.codex/sessions/YYYY/MM/DD/rollout-TIMESTAMP-00000000-0000-0000-0000-000000000000.jsonl",
+  "cli_version": "0.163.0-alpha.10.2"
+}

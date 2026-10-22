@@ -1,0 +1,1237 @@
+{
+  "schema": 1,
+  "default": "zh",
+  "languages": {
+    "zh": "中文",
+    "en": "English",
+    "ja": "日本語",
+    "ko": "한국어"
+  },
+  "entries": {
+    "语言": {
+      "en": "Language",
+      "ja": "言語",
+      "ko": "언어"
+    },
+    "控制": {
+      "en": "Controls",
+      "ja": "操作",
+      "ko": "제어"
+    },
+    "收起": {
+      "en": "Hide",
+      "ja": "閉じる",
+      "ko": "접기"
+    },
+    "额度": {
+      "en": "Usage",
+      "ja": "使用量",
+      "ko": "사용량"
+    },
+    "对话": {
+      "en": "Messages",
+      "ja": "メッセージ",
+      "ko": "메시지"
+    },
+    "任务": {
+      "en": "Tasks",
+      "ja": "タスク",
+      "ko": "작업"
+    },
+    "账号": {
+      "en": "Accounts",
+      "ja": "アカウント",
+      "ko": "계정"
+    },
+    "公告": {
+      "en": "Reset news",
+      "ja": "リセット情報",
+      "ko": "초기화 소식"
+    },
+    "托盘": {
+      "en": "Tray",
+      "ja": "トレイ",
+      "ko": "트레이"
+    },
+    "退出": {
+      "en": "Exit",
+      "ja": "終了",
+      "ko": "종료"
+    },
+    "自动": {
+      "en": "Auto",
+      "ja": "自動",
+      "ko": "자동"
+    },
+    "锁定": {
+      "en": "Lock",
+      "ja": "固定",
+      "ko": "잠금"
+    },
+    "解锁": {
+      "en": "Unlock",
+      "ja": "固定解除",
+      "ko": "잠금 해제"
+    },
+    "置顶": {
+      "en": "Always on top",
+      "ja": "最前面",
+      "ko": "항상 위"
+    },
+    "Q 版": {
+      "en": "Chibi",
+      "ja": "ちびキャラ",
+      "ko": "치비"
+    },
+    "非 Q 版": {
+      "en": "Anime",
+      "ja": "通常キャラ",
+      "ko": "일반"
+    },
+    "待机": {
+      "en": "Idle",
+      "ja": "待機",
+      "ko": "대기"
+    },
+    "思考": {
+      "en": "Thinking",
+      "ja": "思考中",
+      "ko": "생각 중"
+    },
+    "工作": {
+      "en": "Working",
+      "ja": "作業中",
+      "ko": "작업 중"
+    },
+    "睡觉": {
+      "en": "Sleeping",
+      "ja": "睡眠",
+      "ko": "수면"
+    },
+    "睡眠": {
+      "en": "Sleeping",
+      "ja": "睡眠",
+      "ko": "수면"
+    },
+    "打招呼": {
+      "en": "Greeting",
+      "ja": "あいさつ",
+      "ko": "인사"
+    },
+    "生气": {
+      "en": "Pouting",
+      "ja": "すねる",
+      "ko": "삐짐"
+    },
+    "互动": {
+      "en": "Interaction",
+      "ja": "ふれあい",
+      "ko": "상호작용"
+    },
+    "执行中": {
+      "en": "Running",
+      "ja": "実行中",
+      "ko": "실행 중"
+    },
+    "已完成": {
+      "en": "Completed",
+      "ja": "完了",
+      "ko": "완료"
+    },
+    "出错": {
+      "en": "Error",
+      "ja": "エラー",
+      "ko": "오류"
+    },
+    "已中断": {
+      "en": "Interrupted",
+      "ja": "中断",
+      "ko": "중단됨"
+    },
+    "待核对": {
+      "en": "Unverified",
+      "ja": "未確認",
+      "ko": "확인 필요"
+    },
+    "未连接": {
+      "en": "Disconnected",
+      "ja": "未接続",
+      "ko": "연결 끊김"
+    },
+    "角色版本": {
+      "en": "Character style",
+      "ja": "キャラの種類",
+      "ko": "캐릭터 유형"
+    },
+    "角色形态": {
+      "en": "Character state",
+      "ja": "キャラの状態",
+      "ko": "캐릭터 상태"
+    },
+    "桌宠功能": {
+      "en": "Pet controls",
+      "ja": "デスクトップペット操作",
+      "ko": "데스크톱 펫 제어"
+    },
+    "桌宠控制": {
+      "en": "Pet controls",
+      "ja": "ペット操作",
+      "ko": "펫 제어"
+    },
+    "桌宠控制面板": {
+      "en": "Pet control panel",
+      "ja": "ペット操作パネル",
+      "ko": "펫 제어 패널"
+    },
+    "关闭选择菜单": {
+      "en": "Close state picker",
+      "ja": "選択を閉じる",
+      "ko": "선택 메뉴 닫기"
+    },
+    "关闭这条任务消息": {
+      "en": "Dismiss task",
+      "ja": "タスクを非表示",
+      "ko": "작업 알림 닫기"
+    },
+    "收起泡泡": {
+      "en": "Close bubble",
+      "ja": "吹き出しを閉じる",
+      "ko": "말풍선 닫기"
+    },
+    "正在加载模型…": {
+      "en": "Loading model…",
+      "ja": "モデル読込中…",
+      "ko": "모델 불러오는 중…"
+    },
+    "正在连接桌宠状态…": {
+      "en": "Connecting to pet…",
+      "ja": "ペットに接続中…",
+      "ko": "펫에 연결 중…"
+    },
+    "拖动移动 · 滚轮缩放角色与面板 · 右键展开": {
+      "en": "Drag to move · Scroll on pet to resize · Right-click for controls",
+      "ja": "ドラッグで移動 · キャラ上でスクロールして拡縮 · 右クリックで操作",
+      "ko": "드래그로 이동 · 캐릭터 위 휠로 크기 조절 · 우클릭으로 제어"
+    },
+    "陪你把这一小步做好": {
+      "en": "One step at a time, together",
+      "ja": "一歩ずつ、一緒に",
+      "ko": "한 걸음씩 함께해요"
+    },
+    "我在呢。": {
+      "en": "I'm here.",
+      "ja": "ここにいるよ。",
+      "ko": "여기 있어요."
+    },
+    "一起把这一小步做好吧。": {
+      "en": "Let's take this step together.",
+      "ja": "一緒に一歩進もう。",
+      "ko": "함께 한 걸음 나아가요."
+    },
+    "工作的时候，我会安静陪着你。": {
+      "en": "I'll keep you company while you work.",
+      "ja": "作業中は静かにそばにいるよ。",
+      "ko": "작업하는 동안 조용히 곁에 있을게요."
+    },
+    "有新进展，再来告诉你。": {
+      "en": "I'll let you know when something changes.",
+      "ja": "進展があったら知らせるね。",
+      "ko": "새 소식이 있으면 알려드릴게요."
+    },
+    "看看额度": {
+      "en": "View usage",
+      "ja": "使用量を見る",
+      "ko": "사용량 보기"
+    },
+    "看看任务": {
+      "en": "View tasks",
+      "ja": "タスクを見る",
+      "ko": "작업 보기"
+    },
+    "小时额度": {
+      "en": "Short-window usage",
+      "ja": "短時間枠の残量",
+      "ko": "단기 한도 잔여량"
+    },
+    "周额度": {
+      "en": "Weekly usage",
+      "ja": "週間枠の残量",
+      "ko": "주간 한도 잔여량"
+    },
+    "当前登录": {
+      "en": "Current login",
+      "ja": "現在のログイン",
+      "ko": "현재 로그인"
+    },
+    "跟随当前登录": {
+      "en": "Follow current login",
+      "ja": "現在のログインに追従",
+      "ko": "현재 로그인 따라가기"
+    },
+    "回到当前账号": {
+      "en": "Current account",
+      "ja": "現在のアカウント",
+      "ko": "현재 계정"
+    },
+    "切换账号": {
+      "en": "Switch account",
+      "ja": "アカウント切替",
+      "ko": "계정 전환"
+    },
+    "重置卡": {
+      "en": "Reset credits",
+      "ja": "リセットカード",
+      "ko": "초기화 카드"
+    },
+    "返回额度": {
+      "en": "Back to usage",
+      "ja": "使用量に戻る",
+      "ko": "사용량으로 돌아가기"
+    },
+    "返回对话": {
+      "en": "Back to messages",
+      "ja": "メッセージに戻る",
+      "ko": "메시지로 돌아가기"
+    },
+    "刷新": {
+      "en": "Refresh",
+      "ja": "更新",
+      "ko": "새로 고침"
+    },
+    "刷新额度": {
+      "en": "Refresh usage",
+      "ja": "使用量を更新",
+      "ko": "사용량 새로 고침"
+    },
+    "当前账号": {
+      "en": "Current account",
+      "ja": "現在のアカウント",
+      "ko": "현재 계정"
+    },
+    "当前没有可用的重置卡": {
+      "en": "No reset credits available",
+      "ja": "利用可能なリセットカードはありません",
+      "ko": "사용 가능한 초기화 카드가 없습니다"
+    },
+    "可用": {
+      "en": "Available",
+      "ja": "利用可能",
+      "ko": "사용 가능"
+    },
+    "状态待核对": {
+      "en": "Status unverified",
+      "ja": "状態未確認",
+      "ko": "상태 확인 필요"
+    },
+    "正在读取…": {
+      "en": "Reading…",
+      "ja": "読込中…",
+      "ko": "불러오는 중…"
+    },
+    "卡片明细已更新": {
+      "en": "Credit details updated",
+      "ja": "カード詳細を更新しました",
+      "ko": "카드 상세 정보를 업데이트했습니다"
+    },
+    "已读取数量；服务端尚未提供明细": {
+      "en": "Count loaded; details not provided by server",
+      "ja": "枚数を取得しました。サーバーの詳細情報は未提供です",
+      "ko": "개수를 확인했습니다. 서버가 상세 정보는 제공하지 않았습니다"
+    },
+    "读取未完成，请重试": {
+      "en": "Read incomplete. Try again.",
+      "ja": "読込未完了。再試行してください",
+      "ko": "불러오지 못했습니다. 다시 시도하세요"
+    },
+    "尚未读取重置卡": {
+      "en": "Reset credits not loaded",
+      "ja": "カードは未取得です",
+      "ko": "초기화 카드를 아직 불러오지 않았습니다"
+    },
+    "服务端未提供到期时间": {
+      "en": "Expiry not provided by server",
+      "ja": "有効期限は未提供です",
+      "ko": "서버가 만료 시간을 제공하지 않았습니다"
+    },
+    "未设置": {
+      "en": "Not set",
+      "ja": "未設定",
+      "ko": "설정되지 않음"
+    },
+    "使用重置卡": {
+      "en": "Use reset credit",
+      "ja": "リセットカードを使う",
+      "ko": "초기화 카드 사용"
+    },
+    "确认使用重置卡": {
+      "en": "Confirm reset credit",
+      "ja": "カード利用の確認",
+      "ko": "초기화 카드 사용 확인"
+    },
+    "确认使用": {
+      "en": "Confirm use",
+      "ja": "使用する",
+      "ko": "사용 확인"
+    },
+    "取消": {
+      "en": "Cancel",
+      "ja": "キャンセル",
+      "ko": "취소"
+    },
+    "账号已变化，请关闭后重试。": {
+      "en": "Account changed. Close and try again.",
+      "ja": "アカウントが変わりました。閉じて再試行してください。",
+      "ko": "계정이 변경되었습니다. 닫은 후 다시 시도하세요."
+    },
+    "未能提交，请关闭后刷新核对。": {
+      "en": "Submission failed. Close and refresh to verify.",
+      "ja": "送信できませんでした。閉じて更新し、状態を確認してください。",
+      "ko": "제출하지 못했습니다. 닫고 새로 고침하여 확인하세요."
+    },
+    "数量和到期时间来自当前登录账号。点击使用后会再次确认账号与卡片；实际可重置范围由服务端判断。": {
+      "en": "Count and expiry belong to the current login. Confirm the account and credit before use; the server determines eligibility.",
+      "ja": "枚数と期限は現在のログインに対応します。使用前にアカウントとカードを再確認し、適用範囲はサーバーが判定します。",
+      "ko": "개수와 만료 시간은 현재 로그인 계정 기준입니다. 사용 전 계정과 카드를 다시 확인하며 적용 범위는 서버가 판단합니다."
+    },
+    "泡泡外观": {
+      "en": "Bubble appearance",
+      "ja": "吹き出しの外観",
+      "ko": "말풍선 모양"
+    },
+    "泡泡大小与透明度": {
+      "en": "Bubble size and transparency",
+      "ja": "吹き出しのサイズと透明度",
+      "ko": "말풍선 크기 및 투명도"
+    },
+    "大小": {
+      "en": "Size",
+      "ja": "サイズ",
+      "ko": "크기"
+    },
+    "小巧": {
+      "en": "Compact",
+      "ja": "小さめ",
+      "ko": "작게"
+    },
+    "标准": {
+      "en": "Standard",
+      "ja": "標準",
+      "ko": "기본"
+    },
+    "宽松": {
+      "en": "Spacious",
+      "ja": "広め",
+      "ko": "넓게"
+    },
+    "背景透明度": {
+      "en": "Background transparency",
+      "ja": "背景の透明度",
+      "ko": "배경 투명도"
+    },
+    "不透明": {
+      "en": "Opaque",
+      "ja": "不透明",
+      "ko": "불투명"
+    },
+    "更透明": {
+      "en": "More transparent",
+      "ja": "透明",
+      "ko": "더 투명"
+    },
+    "背景透出下方深浅格，文字保持清晰。": {
+      "en": "The checkerboard shows background transparency; text stays clear.",
+      "ja": "チェック柄で背景の透明度を確認できます。文字は鮮明に保たれます。",
+      "ko": "체크무늬로 배경 투명도를 확인합니다. 글자는 선명하게 유지됩니다."
+    },
+    "这个大小，看着舒服吗？": {
+      "en": "Does this size feel comfortable?",
+      "ja": "このサイズは見やすい？",
+      "ko": "이 크기가 편한가요?"
+    },
+    "暂时没有新消息，安心做自己的事。": {
+      "en": "No new updates. Carry on at your own pace.",
+      "ja": "新しいお知らせはありません。自分のペースでどうぞ。",
+      "ko": "새 소식이 없습니다. 편하게 하던 일을 계속하세요."
+    },
+    "正在读取本轮 token…": {
+      "en": "Reading tokens for this turn…",
+      "ja": "このターンのトークンを読込中…",
+      "ko": "이번 턴 토큰을 불러오는 중…"
+    },
+    "本轮 token 暂不可读": {
+      "en": "Turn tokens unavailable",
+      "ja": "このターンのトークンは取得できません",
+      "ko": "이번 턴 토큰을 확인할 수 없습니다"
+    },
+    "本轮输入（含缓存）＋输出": {
+      "en": "Turn input (including cache) + output",
+      "ja": "このターンの入力（キャッシュ含む）＋出力",
+      "ko": "이번 턴 입력(캐시 포함) + 출력"
+    },
+    "本轮已用": {
+      "en": "Used this turn",
+      "ja": "このターンの使用量",
+      "ko": "이번 턴 사용량"
+    },
+    "（进行中）": {
+      "en": "(running)",
+      "ja": "（実行中）",
+      "ko": "(진행 중)"
+    },
+    "重置": {
+      "en": "Resets",
+      "ja": "リセット",
+      "ko": "초기화"
+    },
+    "到期": {
+      "en": "Expires",
+      "ja": "有効期限",
+      "ko": "만료"
+    },
+    "等待读取": {
+      "en": "Waiting for data",
+      "ja": "読込待ち",
+      "ko": "데이터 대기 중"
+    },
+    "正在读取账号额度…": {
+      "en": "Reading account usage…",
+      "ja": "使用量を読込中…",
+      "ko": "계정 사용량을 불러오는 중…"
+    },
+    "缓存 · 等待刷新": {
+      "en": "Cached · awaiting refresh",
+      "ja": "キャッシュ · 更新待ち",
+      "ko": "캐시 · 새로 고침 대기"
+    },
+    "缓存 · 读取未完成": {
+      "en": "Cached · read incomplete",
+      "ja": "キャッシュ · 読込未完了",
+      "ko": "캐시 · 불러오기 미완료"
+    },
+    "仅浏览": {
+      "en": "View only",
+      "ja": "閲覧のみ",
+      "ko": "보기 전용"
+    },
+    "当前登录记录": {
+      "en": "Current login record",
+      "ja": "現在のログイン記録",
+      "ko": "현재 로그인 기록"
+    },
+    "登录账号": {
+      "en": "Account login",
+      "ja": "アカウント",
+      "ko": "계정 로그인"
+    },
+    "登录账号管理": {
+      "en": "Manage logins",
+      "ja": "ログイン管理",
+      "ko": "로그인 관리"
+    },
+    "查看当前账号，或切换到已保存的账号": {
+      "en": "View the current login or switch to a saved account",
+      "ja": "現在のログインを確認、または保存済みアカウントに切り替えます",
+      "ko": "현재 로그인을 확인하거나 저장된 계정으로 전환합니다"
+    },
+    "当前状态": {
+      "en": "Current status",
+      "ja": "現在の状態",
+      "ko": "현재 상태"
+    },
+    "选择已保存账号": {
+      "en": "Choose a saved account",
+      "ja": "保存済みアカウントを選択",
+      "ko": "저장된 계정 선택"
+    },
+    "切换到所选账号": {
+      "en": "Switch to selected account",
+      "ja": "選択したアカウントに切替",
+      "ko": "선택한 계정으로 전환"
+    },
+    "刷新检测": {
+      "en": "Refresh detection",
+      "ja": "再検出",
+      "ko": "다시 확인"
+    },
+    "本机及远程任务均已结束；同意切换时重开 Codex": {
+      "en": "All local and remote tasks are finished; allow Codex to reopen during switching",
+      "ja": "ローカル・リモートの全タスクは終了済みです。切替時の Codex 再起動を許可します",
+      "ko": "로컬 및 원격 작업이 모두 끝났으며 전환 시 Codex를 다시 여는 데 동의합니다"
+    },
+    "保存当前账号": {
+      "en": "Save current account",
+      "ja": "現在のアカウントを保存",
+      "ko": "현재 계정 저장"
+    },
+    "保存当前账号的名称": {
+      "en": "Name for the current account",
+      "ja": "現在のアカウントの名前",
+      "ko": "현재 계정 이름"
+    },
+    "手动恢复上次切换前的账号": {
+      "en": "Restore the previous account",
+      "ja": "切替前のアカウントに戻す",
+      "ko": "이전 계정 복원"
+    },
+    "关闭窗口": {
+      "en": "Close window",
+      "ja": "ウィンドウを閉じる",
+      "ko": "창 닫기"
+    },
+    "账号操作继续运行，稍后可重新打开查看": {
+      "en": "Account operation continues. Reopen later to check.",
+      "ja": "アカウント処理は継続します。後で開いて確認できます",
+      "ko": "계정 작업은 계속됩니다. 나중에 다시 열어 확인하세요"
+    },
+    "等待账号检测": {
+      "en": "Waiting for account detection",
+      "ja": "アカウント検出待ち",
+      "ko": "계정 확인 대기"
+    },
+    "读取当前账号额度…": {
+      "en": "Reading current account usage…",
+      "ja": "現在の使用量を読込中…",
+      "ko": "현재 계정 사용량을 불러오는 중…"
+    },
+    "自动检测安装位置中…": {
+      "en": "Detecting installation…",
+      "ja": "インストール先を検出中…",
+      "ko": "설치 위치를 확인하는 중…"
+    },
+    "请先确认所有 Codex 任务已经结束。": {
+      "en": "Confirm all Codex tasks have finished first.",
+      "ja": "先にすべての Codex タスクの終了を確認してください。",
+      "ko": "먼저 모든 Codex 작업이 종료되었는지 확인하세요."
+    },
+    "请先完成当前账号检测。": {
+      "en": "Wait for current account detection first.",
+      "ja": "現在のアカウント検出を完了してください。",
+      "ko": "현재 계정 확인을 먼저 완료하세요."
+    },
+    "请选择已保存的账号。": {
+      "en": "Choose a saved account.",
+      "ja": "保存済みアカウントを選んでください。",
+      "ko": "저장된 계정을 선택하세요."
+    },
+    "正在读取额度，稍后重试。": {
+      "en": "Reading usage. Try again shortly.",
+      "ja": "使用量を読込中です。しばらくして再試行してください。",
+      "ko": "사용량을 불러오는 중입니다. 잠시 후 다시 시도하세요."
+    },
+    "保存账号中…": {
+      "en": "Saving account…",
+      "ja": "アカウントを保存中…",
+      "ko": "계정을 저장하는 중…"
+    },
+    "切换中：正常关闭并重新打开 Codex，再核对额度…": {
+      "en": "Switching: closing and reopening Codex, then verifying usage…",
+      "ja": "切替中：Codex を正常終了して再起動後、使用量を確認します…",
+      "ko": "전환 중: Codex를 정상 종료 후 다시 열고 사용량을 확인합니다…"
+    },
+    "账号同步暂不可用，请刷新重试。": {
+      "en": "Account sync unavailable. Refresh and try again.",
+      "ja": "アカウント同期を利用できません。更新して再試行してください。",
+      "ko": "계정 동기화를 사용할 수 없습니다. 새로 고침 후 다시 시도하세요."
+    },
+    "模拟切换完成 · 未访问真实账号": {
+      "en": "Simulated switch complete · no real account accessed",
+      "ja": "模擬切替完了 · 実アカウントへのアクセスなし",
+      "ko": "모의 전환 완료 · 실제 계정에 접근하지 않음"
+    },
+    "已找到当前桌面后端。": {
+      "en": "Desktop backend detected.",
+      "ja": "デスクトップのバックエンドを検出しました。",
+      "ko": "데스크톱 백엔드를 찾았습니다."
+    },
+    "模拟模式": {
+      "en": "Simulation mode",
+      "ja": "シミュレーション",
+      "ko": "시뮬레이션 모드"
+    },
+    "开启公告监测": {
+      "en": "Monitor reset news",
+      "ja": "リセット情報を監視",
+      "ko": "초기화 소식 모니터링"
+    },
+    "检查更新": {
+      "en": "Check now",
+      "ja": "今すぐ確認",
+      "ko": "지금 확인"
+    },
+    "查看原帖": {
+      "en": "View source post",
+      "ja": "元の投稿を見る",
+      "ko": "원문 보기"
+    },
+    "社区预测": {
+      "en": "Community forecast",
+      "ja": "コミュニティ予測",
+      "ko": "커뮤니티 예측"
+    },
+    "本账号实测": {
+      "en": "Current account readings",
+      "ja": "現在のアカウントの実測",
+      "ko": "현재 계정 실측"
+    },
+    "最近重置记录 · 社区整理": {
+      "en": "Recent resets · community records",
+      "ja": "最近のリセット · コミュニティ記録",
+      "ko": "최근 초기화 · 커뮤니티 기록"
+    },
+    "数据：": {
+      "en": "Data:",
+      "ja": "データ：",
+      "ko": "데이터:"
+    },
+    "原文与监测详情": {
+      "en": "Source text and monitoring details",
+      "ja": "原文と監視の詳細",
+      "ko": "원문 및 모니터링 상세"
+    },
+    "暂无新重置预告": {
+      "en": "No new reset announcement",
+      "ja": "新しいリセット予告はありません",
+      "ko": "새로운 초기화 예고 없음"
+    },
+    "可能重置": {
+      "en": "Possible reset",
+      "ja": "リセットの可能性",
+      "ko": "초기화 가능성"
+    },
+    "即将重置": {
+      "en": "Reset announced",
+      "ja": "リセット予告あり",
+      "ko": "초기화 예고됨"
+    },
+    "上次预告已过期": {
+      "en": "Previous announcement expired",
+      "ja": "前回の予告は期限切れ",
+      "ko": "이전 예고 기간 만료"
+    },
+    "额度重置正在推进": {
+      "en": "Reset in progress",
+      "ja": "リセット処理中",
+      "ko": "초기화 진행 중"
+    },
+    "等待后续完成消息": {
+      "en": "Awaiting completion news",
+      "ja": "完了情報を待っています",
+      "ko": "완료 소식 대기 중"
+    },
+    "可能已完成重置（待核实）": {
+      "en": "Reset may be complete (unverified)",
+      "ja": "リセット完了の可能性（未確認）",
+      "ko": "초기화 완료 가능성(미확인)"
+    },
+    "重置完成": {
+      "en": "Reset complete",
+      "ja": "リセット完了",
+      "ko": "초기화 완료"
+    },
+    "上次已确认的重置": {
+      "en": "Last confirmed reset",
+      "ja": "前回の確認済みリセット",
+      "ko": "마지막 확인된 초기화"
+    },
+    "本机观测到额度恢复": {
+      "en": "Usage recovery observed locally",
+      "ja": "この端末で残量の回復を検出",
+      "ko": "이 기기에서 한도 회복 감지"
+    },
+    "社区记录称重置完成": {
+      "en": "Community reports reset complete",
+      "ja": "コミュニティ記録：リセット完了",
+      "ko": "커뮤니티 기록: 초기화 완료"
+    },
+    "上次社区记录的重置": {
+      "en": "Last community-recorded reset",
+      "ja": "前回のコミュニティ記録のリセット",
+      "ko": "마지막 커뮤니티 기록 초기화"
+    },
+    "预测暂不可用；公告和账号实测继续独立检查。": {
+      "en": "Forecast unavailable; news and account checks continue independently.",
+      "ja": "予測は利用できません。情報とアカウントの実測は別途確認します。",
+      "ko": "예측을 사용할 수 없습니다. 소식과 계정 실측은 별도로 확인합니다."
+    },
+    "预测已过期，暂不显示旧概率。": {
+      "en": "Forecast expired; old odds are hidden.",
+      "ja": "予測は期限切れです。古い確率は表示しません。",
+      "ko": "예측이 만료되어 이전 확률을 표시하지 않습니다."
+    },
+    "社区实验预测，不是官方承诺。": {
+      "en": "Experimental community forecast, not an official promise.",
+      "ja": "コミュニティの実験的予測であり、公式の約束ではありません。",
+      "ko": "커뮤니티의 실험적 예측이며 공식적인 약속이 아닙니다."
+    },
+    "尚未取得社区重置记录。": {
+      "en": "No community reset records loaded.",
+      "ja": "コミュニティのリセット記録は未取得です。",
+      "ko": "커뮤니티 초기화 기록을 아직 불러오지 않았습니다."
+    },
+    "当前账号：尚未取得登录记录。": {
+      "en": "Current account: login record not loaded.",
+      "ja": "現在のアカウント：ログイン記録未取得。",
+      "ko": "현재 계정: 로그인 기록을 아직 확인하지 못했습니다."
+    },
+    "本账号恢复情况尚未核实；请刷新额度。": {
+      "en": "Account recovery unverified; refresh usage.",
+      "ja": "このアカウントの回復は未確認です。使用量を更新してください。",
+      "ko": "이 계정의 회복 여부가 미확인입니다. 사용량을 새로 고침하세요."
+    },
+    "已读取当前额度；不能仅凭公告判定本账号已恢复。": {
+      "en": "Current usage loaded; an announcement alone does not confirm recovery.",
+      "ja": "現在の残量を取得しました。告知だけではこのアカウントの回復を確認できません。",
+      "ko": "현재 한도를 확인했습니다. 공지만으로 이 계정의 회복을 판단할 수 없습니다."
+    },
+    "本账号已观测到额度恢复；不据此断言恢复原因或其他账号状态。": {
+      "en": "Recovery observed for this account; cause and other accounts remain unverified.",
+      "ja": "このアカウントの残量回復を検出しました。原因や他アカウントの状態は未確認です。",
+      "ko": "이 계정의 한도 회복을 감지했습니다. 원인과 다른 계정의 상태는 미확인입니다."
+    },
+    "社区时间线记录的重置；本账号是否恢复见下方实测。": {
+      "en": "Reset recorded by the community; see account readings below.",
+      "ja": "コミュニティ記録のリセットです。アカウントの実測は下をご確認ください。",
+      "ko": "커뮤니티에 기록된 초기화입니다. 계정 실측은 아래를 확인하세요."
+    },
+    "当前显示缓存。": {
+      "en": "Showing cached data.",
+      "ja": "キャッシュを表示中。",
+      "ko": "캐시된 데이터를 표시합니다."
+    },
+    "社区检测到明确重置进展；仍需核实完成及账号范围。": {
+      "en": "Community detected explicit reset progress; completion and account scope need verification.",
+      "ja": "コミュニティが明確な進展を検出しました。完了と適用範囲は要確認です。",
+      "ko": "커뮤니티가 명확한 초기화 진행을 감지했습니다. 완료 및 적용 계정은 확인이 필요합니다."
+    },
+    "公告、社区记录和本账号额度分别核对。来源可能延迟或漏帖。": {
+      "en": "News, community records and account usage are checked separately. Sources may lag or miss posts.",
+      "ja": "告知・コミュニティ記録・アカウント残量は別々に確認します。情報の遅延や欠落があります。",
+      "ko": "공지, 커뮤니티 기록, 계정 한도는 별도로 확인합니다. 소스가 지연되거나 누락될 수 있습니다."
+    },
+    "正常每 5 分钟检查；所有手动检查也遵守至少 60 秒间隔及服务端退避。": {
+      "en": "Checks every 5 minutes. Manual checks also respect a 60-second minimum and server backoff.",
+      "ja": "通常は5分ごとに確認。手動でも最低60秒間隔とサーバーの待機指示を守ります。",
+      "ko": "기본 확인 주기는 5분입니다. 수동 확인도 최소 60초 간격과 서버 대기 시간을 준수합니다."
+    },
+    "监测中": {
+      "en": "Monitoring",
+      "ja": "監視中",
+      "ko": "모니터링 중"
+    },
+    "正在检查": {
+      "en": "Checking",
+      "ja": "確認中",
+      "ko": "확인 중"
+    },
+    "准备连接": {
+      "en": "Connecting",
+      "ja": "接続準備中",
+      "ko": "연결 준비 중"
+    },
+    "已关闭": {
+      "en": "Disabled",
+      "ja": "無効",
+      "ko": "비활성화됨"
+    },
+    "来源数据延迟": {
+      "en": "Source delayed",
+      "ja": "情報源に遅延",
+      "ko": "소스 지연"
+    },
+    "来源暂不可用": {
+      "en": "Source unavailable",
+      "ja": "情報源を利用できません",
+      "ko": "소스를 사용할 수 없음"
+    },
+    "动态源暂不可用；社区数据已更新": {
+      "en": "Post source unavailable; community data updated",
+      "ja": "投稿元は利用不可。コミュニティデータを更新しました",
+      "ko": "게시물 소스 사용 불가. 커뮤니티 데이터는 업데이트됨"
+    },
+    "高": {
+      "en": "High",
+      "ja": "高",
+      "ko": "높음"
+    },
+    "中": {
+      "en": "Medium",
+      "ja": "中",
+      "ko": "보통"
+    },
+    "低": {
+      "en": "Low",
+      "ja": "低",
+      "ko": "낮음"
+    },
+    "缓存": {
+      "en": "Cached",
+      "ja": "キャッシュ",
+      "ko": "캐시"
+    },
+    "历史缓存": {
+      "en": "Historical cache",
+      "ja": "履歴キャッシュ",
+      "ko": "기록 캐시"
+    },
+    "更新": {
+      "en": "Updated",
+      "ja": "更新",
+      "ko": "업데이트"
+    },
+    "未来 24 小时": {
+      "en": "Next 24 hours",
+      "ja": "今後24時間",
+      "ko": "향후 24시간"
+    },
+    "未来 48 小时": {
+      "en": "Next 48 hours",
+      "ja": "今後48時間",
+      "ko": "향후 48시간"
+    },
+    "置信度：": {
+      "en": "Confidence:",
+      "ja": "信頼度：",
+      "ko": "신뢰도:"
+    },
+    "计算时间：": {
+      "en": "Calculated:",
+      "ja": "計算時刻：",
+      "ko": "계산 시간:"
+    },
+    "上次成功检查：": {
+      "en": "Last checked:",
+      "ja": "最終確認：",
+      "ko": "마지막 확인:"
+    },
+    "预告时间上限：": {
+      "en": "Announced deadline:",
+      "ja": "予告の期限：",
+      "ko": "예고 마감:"
+    },
+    "最近相关原文：": {
+      "en": "Latest relevant source:",
+      "ja": "最近の関連原文：",
+      "ko": "최근 관련 원문:"
+    },
+    "显示桌宠": {
+      "en": "Show Lumi",
+      "ja": "Lumi を表示",
+      "ko": "Lumi 표시"
+    },
+    "收起到托盘": {
+      "en": "Minimize to tray",
+      "ja": "トレイに格納",
+      "ko": "트레이로 최소화"
+    },
+    "查看额度": {
+      "en": "View usage",
+      "ja": "使用量を見る",
+      "ko": "사용량 보기"
+    },
+    "账号管理": {
+      "en": "Manage accounts",
+      "ja": "アカウント管理",
+      "ko": "계정 관리"
+    },
+    "提醒记录": {
+      "en": "Notification history",
+      "ja": "通知履歴",
+      "ko": "알림 기록"
+    },
+    "重新加载桌宠界面": {
+      "en": "Reload Lumi interface",
+      "ja": "Lumi の画面を再読込",
+      "ko": "Lumi 화면 다시 불러오기"
+    },
+    "退出桌宠": {
+      "en": "Exit Lumi",
+      "ja": "Lumi を終了",
+      "ko": "Lumi 종료"
+    },
+    "开启提示音": {
+      "en": "Enable notification sounds",
+      "ja": "通知音を有効化",
+      "ko": "알림음 켜기"
+    },
+    "关闭提示音": {
+      "en": "Disable notification sounds",
+      "ja": "通知音を無効化",
+      "ko": "알림음 끄기"
+    },
+    "额度提醒记录": {
+      "en": "Usage notification history",
+      "ja": "使用量の通知履歴",
+      "ko": "사용량 알림 기록"
+    },
+    "开启声音提示": {
+      "en": "Enable sounds",
+      "ja": "通知音を有効化",
+      "ko": "알림음 켜기"
+    },
+    "暂无额度重置提醒。小时窗口按服务端实际返回的时长显示。": {
+      "en": "No reset notices. Short windows follow the server-reported duration.",
+      "ja": "リセット通知はありません。短時間枠はサーバーの実際の期間に従います。",
+      "ko": "초기화 알림이 없습니다. 단기 한도는 서버가 반환한 기간을 따릅니다."
+    },
+    "全身分层候选": {
+      "en": "Full-body preview",
+      "ja": "全身プレビュー",
+      "ko": "전신 미리 보기"
+    },
+    "静态": {
+      "en": "Static",
+      "ja": "静止",
+      "ko": "정적"
+    },
+    "局部呼吸": {
+      "en": "Breathing",
+      "ja": "呼吸",
+      "ko": "호흡"
+    },
+    "更多操作与诊断": {
+      "en": "More actions and diagnostics",
+      "ja": "追加操作と診断",
+      "ko": "추가 작업 및 진단"
+    },
+    "保存": {
+      "en": "Save",
+      "ja": "保存",
+      "ko": "저장"
+    },
+    "模拟": {
+      "en": "Demo",
+      "ja": "デモ",
+      "ko": "예시"
+    },
+    "演示": {
+      "en": "Demo",
+      "ja": "デモ",
+      "ko": "예시"
+    },
+    "自动状态": {
+      "en": "Automatic state",
+      "ja": "自動状態",
+      "ko": "자동 상태"
+    },
+    "切换会退出并重开 Codex，无法在原窗口内刷新登录。请先结束全部任务。刷新检测不会切号；额度分页只供查看。": {
+      "en": "Switching closes and reopens Codex. Finish all tasks first. Refresh only checks; browsing usage never switches accounts.",
+      "ja": "切替時は Codex を終了し再起動します。先に全タスクを終了してください。再検出や使用量の閲覧だけでは切り替わりません。",
+      "ko": "전환 시 Codex를 종료 후 다시 엽니다. 먼저 모든 작업을 끝내세요. 다시 확인하거나 사용량을 보는 것만으로는 계정이 전환되지 않습니다."
+    },
+    "模拟模式：A/B 及额度都是测试数据，不读取真实登录，不停止任何 Codex 进程。": {
+      "en": "Demo mode: accounts and usage are test data. No real login is read and no Codex process is stopped.",
+      "ja": "デモモード：アカウントと使用量はテストデータです。実ログインの読取や Codex の停止は行いません。",
+      "ko": "예시 모드: 계정과 사용량은 테스트 데이터입니다. 실제 로그인을 읽거나 Codex 프로세스를 중지하지 않습니다."
+    },
+    "已找到额度查询组件，可独立刷新。账号切换需要打开 Codex 客户端。": {
+      "en": "Usage component found; independent refresh is available. Open Codex before switching accounts.",
+      "ja": "使用量照会コンポーネントを検出。単独更新できます。アカウント切替には Codex を開いてください。",
+      "ko": "사용량 조회 구성 요소를 찾았습니다. 별도로 새로 고침할 수 있습니다. 계정 전환 전 Codex를 여세요."
+    },
+    "切换时会自动处理并恢复后台连接；刷新只检测。": {
+      "en": "Switching handles and restores the backend connection; refresh only checks.",
+      "ja": "切替時にバックエンド接続を処理して復元します。再検出だけでは変更しません。",
+      "ko": "전환 시 백엔드 연결을 처리하고 복원합니다. 새로 고침은 확인만 합니다."
+    },
+    "请先结束其任务后刷新检测。": {
+      "en": "Finish its tasks, then refresh detection.",
+      "ja": "そのタスクを終了してから再検出してください。",
+      "ko": "해당 작업을 끝낸 후 다시 확인하세요."
+    },
+    "当前账号额度未读到；请检查登录后刷新。": {
+      "en": "Current usage unavailable. Check your login, then refresh.",
+      "ja": "現在の使用量を取得できません。ログインを確認後、更新してください。",
+      "ko": "현재 사용량을 확인하지 못했습니다. 로그인 확인 후 새로 고침하세요."
+    },
+    "未能启动切换进程，请重试。": {
+      "en": "Could not start the switch process. Try again.",
+      "ja": "切替処理を開始できませんでした。再試行してください。",
+      "ko": "전환 프로세스를 시작하지 못했습니다. 다시 시도하세요."
+    },
+    "重新检测当前登录…": {
+      "en": "Checking the current login…",
+      "ja": "現在のログインを再検出中…",
+      "ko": "현재 로그인을 다시 확인하는 중…"
+    },
+    "重新检测当前登录与 Codex 后端；这不会重启 Codex，也不会再次切号。": {
+      "en": "Checking login and backend. This does not restart Codex or switch again.",
+      "ja": "ログインとバックエンドを再検出します。再起動や再切替は行いません。",
+      "ko": "로그인 및 백엔드를 확인합니다. Codex를 다시 시작하거나 재전환하지 않습니다."
+    },
+    "仅支持通过 Codex 官方登录得到的 ChatGPT 账号；此登录记录不符合要求。": {
+      "en": "Only ChatGPT accounts signed in through Codex are supported. This login record is incompatible.",
+      "ja": "Codex の正規ログインによる ChatGPT アカウントのみ対応します。この記録は非対応です。",
+      "ko": "Codex 공식 로그인을 통한 ChatGPT 계정만 지원합니다. 이 로그인 기록은 호환되지 않습니다."
+    },
+    "展开控制面板；角色上右键也可以展开": {
+      "en": "Open controls; right-clicking the pet also opens them",
+      "ja": "操作パネルを開く（キャラの右クリックでも可）",
+      "ko": "제어 패널 열기(캐릭터 우클릭으로도 가능)"
+    },
+    "Tibo 额度重置公告与监测设置": {
+      "en": "Tibo reset news and monitoring settings",
+      "ja": "Tibo のリセット情報と監視設定",
+      "ko": "Tibo 초기화 소식 및 모니터링 설정"
+    },
+    "收起到系统托盘": {
+      "en": "Minimize to system tray",
+      "ja": "システムトレイに格納",
+      "ko": "시스템 트레이로 최소화"
+    },
+    "缩小角色与控制面板": {
+      "en": "Make pet and controls smaller",
+      "ja": "キャラと操作パネルを縮小",
+      "ko": "캐릭터와 제어 패널 축소"
+    },
+    "放大角色与控制面板": {
+      "en": "Make pet and controls larger",
+      "ja": "キャラと操作パネルを拡大",
+      "ko": "캐릭터와 제어 패널 확대"
+    },
+    "锁定位置": {
+      "en": "Lock position",
+      "ja": "位置を固定",
+      "ko": "위치 잠금"
+    },
+    "Live2D 角色": {
+      "en": "Live2D character",
+      "ja": "Live2D キャラクター",
+      "ko": "Live2D 캐릭터"
+    },
+    "操作未完成，请重试": {
+      "en": "Action incomplete. Try again.",
+      "ja": "操作未完了。再試行してください",
+      "ko": "작업이 완료되지 않았습니다. 다시 시도하세요"
+    },
+    "社区记录称新一轮重置已完成；你的账号额度仍待实测。数据：codex-reset.com": {
+      "en": "Community records show a new reset. Your account still needs verification. Data: codex-reset.com",
+      "ja": "コミュニティ記録で新しいリセットを確認。あなたのアカウントは実測が必要です。データ：codex-reset.com",
+      "ko": "커뮤니티 기록에 새 초기화가 있습니다. 계정 한도는 실측 확인이 필요합니다. 데이터: codex-reset.com"
+    },
+    "检测到新的明确重置预告，请查看时间与适用范围。数据：codex-reset.com": {
+      "en": "New explicit reset announcement. Check its time and scope. Data: codex-reset.com",
+      "ja": "明確な新リセット予告を検出。時刻と適用範囲をご確認ください。データ：codex-reset.com",
+      "ko": "명확한 새 초기화 예고를 감지했습니다. 시간과 적용 범위를 확인하세요. 데이터: codex-reset.com"
+    },
+    "Tibo 有重置进展，社区尚待确认实际完成。数据：codex-reset.com": {
+      "en": "Tibo posted reset progress; community confirmation is pending. Data: codex-reset.com",
+      "ja": "Tibo がリセット進展を投稿。コミュニティでの完了確認待ちです。データ：codex-reset.com",
+      "ko": "Tibo가 초기화 진행을 게시했습니다. 커뮤니티의 완료 확인을 기다립니다. 데이터: codex-reset.com"
+    },
+    "重置公告": {
+      "en": "Reset news",
+      "ja": "リセット情報",
+      "ko": "초기화 소식"
+    }
+  },
+  "patterns": [
+    {
+      "pattern": "^精确用量：(.+)$",
+      "en": "Exact usage: $1",
+      "ja": "正確な使用量：$1",
+      "ko": "정확한 사용량: $1"
+    },
+    {
+      "pattern": "^本轮已用 (.+) token(.*)$",
+      "en": "Used this turn: $1 token$2",
+      "ja": "このターン：$1 token$2",
+      "ko": "이번 턴: $1 token$2"
+    },
+    {
+      "pattern": "^当前登录记录：(.*)$",
+      "en": "Current login: $1",
+      "ja": "現在のログイン：$1",
+      "ko": "현재 로그인: $1"
+    },
+    {
+      "pattern": "^为 (.+) 使用这张重置卡？到期：(.+)。成功后会消耗 1 张卡，操作不可撤销。$",
+      "en": "Use this reset credit for $1? Expires: $2. Success spends one credit and cannot be undone.",
+      "ja": "$1 にこのカードを使いますか？有効期限：$2。成功すると1枚消費され、取り消せません。",
+      "ko": "$1 계정에 이 초기화 카드를 사용할까요? 만료: $2. 성공하면 카드 1장이 소모되며 취소할 수 없습니다."
+    },
+    {
+      "pattern": "^([0-9]+) 张可用$",
+      "en": "$1 available",
+      "ja": "$1枚利用可能",
+      "ko": "$1장 사용 가능"
+    },
+    {
+      "pattern": "^到期 (.+)$",
+      "en": "Expires $1",
+      "ja": "有効期限 $1",
+      "ko": "만료 $1"
+    },
+    {
+      "pattern": "^已返回 ([0-9]+) 张明细，总数以服务端返回的 ([0-9]+) 张为准。$",
+      "en": "$1 details returned; server total: $2.",
+      "ja": "詳細を$1枚取得。サーバーの総数は$2枚です。",
+      "ko": "상세 $1장 확인. 서버 기준 총 $2장입니다."
+    },
+    {
+      "pattern": "^当前登录记录为 (.+)；尚未检测到可核对的 Codex 后端。请先在 Codex 中重试连接或重启，再刷新检测。$",
+      "en": "Current login: $1. No verified Codex backend found. Reconnect or reopen Codex, then refresh.",
+      "ja": "現在のログイン：$1。確認できる Codex バックエンドがありません。再接続または再起動後、更新してください。",
+      "ko": "현재 로그인: $1. 확인 가능한 Codex 백엔드를 찾지 못했습니다. 다시 연결하거나 연 후 새로 고침하세요."
+    },
+    {
+      "pattern": "^后端实际位置：(.*)$",
+      "en": "Backend path: $1",
+      "ja": "バックエンドのパス：$1",
+      "ko": "백엔드 경로: $1"
+    },
+    {
+      "pattern": "^账号 (A|B)$",
+      "en": "Account $1",
+      "ja": "アカウント $1",
+      "ko": "계정 $1"
+    },
+    {
+      "pattern": "^演示账号 (A|B)$",
+      "en": "Demo account $1",
+      "ja": "デモアカウント $1",
+      "ko": "예시 계정 $1"
+    },
+    {
+      "pattern": "^Lumi · (.+)$",
+      "en": "Lumi · $1",
+      "ja": "Lumi · $1",
+      "ko": "Lumi · $1"
+    },
+    {
+      "pattern": "^(.+) · 执行中，点击查看详情$",
+      "en": "$1 · Running — view details",
+      "ja": "$1 · 実行中（詳細を表示）",
+      "ko": "$1 · 실행 중 — 상세 보기"
+    },
+    {
+      "pattern": "^(.+) · 已完成，点击查看详情$",
+      "en": "$1 · Completed — view details",
+      "ja": "$1 · 完了（詳細を表示）",
+      "ko": "$1 · 완료 — 상세 보기"
+    },
+    {
+      "pattern": "^(.+) · 出错，点击查看详情$",
+      "en": "$1 · Error — view details",
+      "ja": "$1 · エラー（詳細を表示）",
+      "ko": "$1 · 오류 — 상세 보기"
+    },
+    {
+      "pattern": "^(.+) · 已中断，点击查看详情$",
+      "en": "$1 · Interrupted — view details",
+      "ja": "$1 · 中断（詳細を表示）",
+      "ko": "$1 · 중단됨 — 상세 보기"
+    },
+    {
+      "pattern": "^(.+) 的小时窗口额度已重置（已核实）$",
+      "en": "$1 short-window usage reset (verified)",
+      "ja": "$1 の短時間枠をリセット（確認済み）",
+      "ko": "$1 단기 한도 초기화됨(확인됨)"
+    },
+    {
+      "pattern": "^(.+) 的周额度已重置（已核实）$",
+      "en": "$1 weekly usage reset (verified)",
+      "ja": "$1 の週間枠をリセット（確認済み）",
+      "ko": "$1 주간 한도 초기화됨(확인됨)"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/site.test.cjs
+      - name: Parse PowerShell without executing application code
+        shell: powershell
+        run: |
+          $failed = @()
+          Get-ChildItem src,scripts -Recurse -Filter *.ps1 | ForEach-Object {
+            $tokens=$null; $errors=$null
+            $null=[Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$tokens,[ref]$errors)
+            if($errors.Count){$failed += $_.FullName; $errors | Write-Output}
+          }
+          if($failed.Count){throw 'PowerShell syntax checks failed'}

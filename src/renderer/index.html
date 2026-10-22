@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src pet: data: blob:; connect-src pet:; media-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>lumi</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bubble-ui.css">
+</head>
+<body>
+  <section id="control-dock" aria-label="桌宠控制面板">
+    <div class="dock-head"><button id="controls-toggle" type="button" aria-expanded="false" aria-controls="control-body" title="展开控制面板；角色上右键也可以展开">控制 ▾</button><strong id="identity">正在加载模型…</strong><button id="quota" type="button">额度</button><button id="tibo" type="button" title="Tibo 额度重置公告与监测设置">公告</button><button id="minimize" type="button" title="收起到系统托盘">−</button><button id="quit" title="退出桌宠">×</button></div>
+    <div id="control-body" hidden>
+      <p id="hint">拖动移动 · 滚轮缩放角色与面板 · 右键展开</p>
+      <nav aria-label="桌宠控制"><button id="smaller" title="缩小角色与控制面板">−</button><button id="larger" title="放大角色与控制面板">＋</button><button id="lock" title="锁定位置">锁定</button><button id="topmost" title="置顶">置顶 ✓</button><button id="accounts" type="button">账号</button><button id="auto" type="button">自动</button></nav>
+      <div class="forms">
+        <select id="appearance" hidden aria-hidden="true" tabindex="-1"><option value="chibi">Q 版</option><option value="anime">非 Q 版</option></select><select id="form" hidden aria-hidden="true" tabindex="-1"></select>
+        <button id="appearance-picker" type="button" role="combobox" aria-label="角色版本" aria-haspopup="listbox" aria-controls="choice-options" aria-expanded="false">Q 版 ▾</button>
+        <button id="form-picker" type="button" role="combobox" aria-label="角色形态" aria-haspopup="listbox" aria-controls="choice-options" aria-expanded="false">待机 ▾</button>
+      </div>
+      <div id="choice-panel" class="choice-panel" hidden>
+        <div class="choice-head"><strong id="choice-title">角色形态</strong><button id="choice-close" type="button" aria-label="关闭选择菜单">×</button></div>
+        <div id="choice-options" class="choice-options" role="listbox" aria-labelledby="choice-title"></div>
+        <div id="choice-pages" class="choice-pages"><button id="choice-prev" type="button">‹</button><span id="choice-page"></span><button id="choice-next" type="button">›</button></div>
+      </div>
+      <footer>正在连接桌宠状态…</footer>
+    </div>
+  </section>
+  <canvas id="pet" aria-label="Live2D 角色"></canvas>
+  <script src="vendor/live2dcubismcore.min.js"></script>
+  <script src="vendor/pixi.min.js"></script>
+  <script src="vendor/unsafe-eval.min.js"></script>
+  <script src="vendor/cubism4.min.js"></script>
+  <script src="head-motion.js"></script>
+  <script src="body-motion.js"></script>
+  <script src="pixel-hit.js"></script>
+  <script src="form-picker.js"></script>
+  <script src="notice-header.js"></script>
+  <script src="task-bubble.js"></script>
+  <script src="long-gap-health.js"></script>
+  <script src="i18n.js"></script>
+  <script src="bubble-ui.js"></script>
+  <script src="configure-full-body-motion.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>

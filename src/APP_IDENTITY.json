@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "name": "lumi",
+  "executable": "lumi.exe",
+  "icon": "assets/branding/lumi.ico",
+  "icon_png": "assets/branding/lumi.png",
+  "icon_wordmark": "LUMI",
+  "revision": "USER_RESTORED_ORIGINAL_ICON_20261014"
+}
